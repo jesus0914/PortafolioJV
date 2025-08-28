@@ -22,7 +22,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
 
   const validate = () => {
-    let newErrors = { name: "", email: "", message: "" };
+    const newErrors = { name: "", email: "", message: "" };
     let valid = true;
 
     if (!form.name.trim()) {
