@@ -34,7 +34,7 @@ export default function Footer() {
         <nav aria-label="Redes sociales">
           <div className="flex space-x-6">
             <motion.a
-              href="https://github.com/tuusuario"
+              href="https://github.com/jesus0914/jesu0914"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: 10 }}
@@ -46,7 +46,7 @@ export default function Footer() {
             </motion.a>
 
             <motion.a
-              href="https://linkedin.com/in/tuusuario"
+              href="https://www.linkedin.com/in/jesus-villarreal-cuello-8a222a269"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.2, rotate: -10 }}
@@ -58,7 +58,7 @@ export default function Footer() {
             </motion.a>
 
             <motion.a
-              href="mailto:tuemail@gmail.com"
+              href="mailto:jv5655217@gmail.com"
               whileHover={{ scale: 1.2 }}
               whileFocus={{ scale: 1.2 }}
               className="hover:text-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-600 rounded"
