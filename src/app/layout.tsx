@@ -51,7 +51,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   desktop: {
                     position: 'br',
                     xOffset: 20,
-                    yOffset: 20
+                    yOffset: 14
+                    0
                   },
                   mobile: {
                     position: 'br',
