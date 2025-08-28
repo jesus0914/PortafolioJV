@@ -27,17 +27,19 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="es" suppressHydrationWarning>
       <body className="bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-white">
         <Navbar />
+
         <main className="max-w-6xl mx-auto px-6 py-12">
           <div className="mb-12">{children}</div>
         </main>
 
-        <div className="fixed bottom-20 right-5 z-50">
+        {/* 📱 Botón de WhatsApp (se adapta a pantallas) */}
+        <div className="fixed bottom-28 right-5 md:bottom-20 z-50">
           <WhatsappWidget />
         </div>
 
         <Footer />
 
-        {/* Tawk.to Live Chat Script con posición personalizada */}
+        {/* 💬 Tawk.to con offsets separados para mobile/desktop */}
         <Script
           id="tawkto"
           strategy="afterInteractive"
@@ -49,12 +51,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                   desktop: {
                     position: 'br',
                     xOffset: 20,
-                    yOffset: 140
+                    yOffset: 20
                   },
                   mobile: {
                     position: 'br',
                     xOffset: 20,
-                    yOffset: 80
+                    yOffset: 10
                   }
                 }
               };

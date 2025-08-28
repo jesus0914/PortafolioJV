@@ -2,28 +2,10 @@
 
 import { motion } from "framer-motion";
 import {
-  SiPython,
-  SiPhp,
-  SiJavascript,
-  SiTypescript,
-  SiHtml5,
-  SiCss3,
-  SiTailwindcss,
-  SiAngular,
-  SiReact,
-  SiNextdotjs,
-  SiFirebase,
-  SiPostgresql,
-  SiNestjs,
-  SiFlask,
-  SiIonic,
-  SiMysql,
-  SiMongodb,
-  SiNumpy,
-  SiPandas,
-  SiOpencv,
-  SiKeras,
-  SiTensorflow,
+  SiPython, SiPhp, SiJavascript, SiTypescript, SiHtml5, SiCss3,
+  SiTailwindcss, SiAngular, SiReact, SiNextdotjs, SiFirebase,
+  SiPostgresql, SiNestjs, SiFlask, SiIonic, SiMysql, SiMongodb,
+  SiNumpy, SiPandas, SiOpencv, SiKeras, SiTensorflow
 } from "react-icons/si";
 import { MdScience } from "react-icons/md";
 
@@ -74,30 +56,36 @@ const skills = [
   {
     category: "Ciberseguridad",
     items: [
-        {
+      {
         name: "Kali Linux",
         icon: (
-            <img
+          <img
             src="/logos/kali-linux.png"
             alt="Kali Linux"
             style={{ width: 40, height: 40, objectFit: "contain" }}
-            />
+          />
         ),
-        },
-        { name: "OWASP", 
-          icon: ( <img src="https://owasp.org/assets/images/logo.svg" 
-          alt="OWASP" style={{ width: 28, height: 28 }} /> ),
-        },
-        {
+      },
+      {
+        name: "OWASP",
+        icon: (
+          <img
+            src="https://owasp.org/assets/images/logo.svg"
+            alt="OWASP"
+            style={{ width: 28, height: 28 }}
+          />
+        ),
+      },
+      {
         name: "Wireshark",
         icon: (
-            <img
+          <img
             src="/logos/wireshark.jpeg"
             alt="Wireshark"
             style={{ width: 35, height: 35, objectFit: "contain" }}
-            />
+          />
         ),
-        },
+      },
     ],
   },
   {
@@ -113,14 +101,13 @@ const skills = [
       {
         name: "Power BI",
         icon: (
-            <img
+          <img
             src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"
             alt="Power BI"
             style={{ width: 28, height: 28 }}
-            />
+          />
         ),
-      }
-
+      },
     ],
   },
 ];
@@ -137,7 +124,7 @@ const item = {
 
 export default function About() {
   return (
-    <section className="min-h-screen bg-gradient-to-r from-blue-50 via-white to-blue-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 px-6 relative">
+    <section className="min-h-screen bg-gradient-to-r from-blue-50 via-white to-blue-100 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-20 px-4 sm:px-6 relative">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.04),transparent)] pointer-events-none z-0" />
       <div className="max-w-6xl mx-auto relative z-10 flex flex-col gap-8">
         <motion.h1
@@ -164,7 +151,7 @@ export default function About() {
           digitales que transformen ideas en productos útiles, escalables y con impacto real.
         </motion.p>
 
-        {/* Contenedor de las categorías: una columna vertical */}
+        {/* Categorías con íconos */}
         <div className="flex flex-col gap-10">
           {skills.map(({ category, items }) => (
             <motion.div
@@ -178,8 +165,7 @@ export default function About() {
               <h2 className="text-2xl font-semibold mb-6 text-center sm:text-left text-blue-600 dark:text-blue-400">
                 {category}
               </h2>
-              {/* Aquí va el grid solo para los ítems */}
-              <div className="grid grid-cols-3 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-6">
                 {items.map(({ name, icon }) => (
                   <motion.div
                     key={name}
@@ -187,7 +173,7 @@ export default function About() {
                     className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-700/60 shadow hover:shadow-lg transition duration-300 backdrop-blur-md border border-gray-200 dark:border-gray-600"
                   >
                     <div>{icon}</div>
-                    <span className="text-gray-800 dark:text-gray-100 text-base font-medium">
+                    <span className="text-gray-800 dark:text-gray-100 text-sm sm:text-base font-medium">
                       {name}
                     </span>
                   </motion.div>
