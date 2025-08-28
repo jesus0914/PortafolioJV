@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 visibility: {
                   desktop: {
                     position: 'br',
-                    xOffset: 20,
+                    xOffset: 21,
                     yOffset: 140
                   },
                   mobile: {
