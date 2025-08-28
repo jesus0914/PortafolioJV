@@ -21,6 +21,12 @@ const projects = [
     link: "https://frontend-chatbot-campistas-ia.vercel.app/",
     image: "/projects/chatbot.png",
   },
+  {
+    title: "STORE APP – TIENDA WEB ",
+    description: "Tienda online desarrollada con Angular y consumiendo la API de Platzi.",
+    link: "https://store-six-puce.vercel.app/",
+    image: "/projects/tienda.png", // 👈 pon aquí una captura del proyecto en /public/projects/
+  }
 ];
 
 export default function ProjectsPage() {
